@@ -62,3 +62,8 @@ target/
 .ipynb_checkpoints
 
 .venv
+
+# wercker work directory
+_builds/
+_projects/
+_steps/
