@@ -28,6 +28,7 @@ build:
     - script:
         name: install dependencies
         code: |
+          apt-get update
           apt-get install libpq-dev -y
 
     # A step that sets up the python virtual environment
