@@ -1,3 +1,6 @@
+# -*- coding:utf-8 -*-
+
+import os
 from aiohttp import web
 
 async def handle(request):
@@ -7,5 +10,5 @@ async def handle(request):
 
 app = web.Application()
 app.router.add_route('GET', '/{name}', handle)
-
-web.run_app(app)
+port = int(os.environ['PORT'])
+web.run_app(app, port=port)
