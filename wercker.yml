@@ -29,7 +29,7 @@ build:
         name: install dependencies
         code: |
           apt-get update
-          apt-get install libpq-dev -y
+          apt-get install build-essential libpq-dev -y
 
     - pip-install:
         requirements_file: ""
